@@ -1,0 +1,71 @@
+// --- VARIABLES ---
+
+$red-color: #d32f2f;
+
+// --- RESET ---
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+// --- STICKY FOOTER ---
+.App {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.site-content {
+  flex: 1;
+}
+
+// --- GENERIC CLASSES ---
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+// --- TOP NAVIGATION BAR ---
+
+#main-nav {
+  background: $red-color;
+  display: flex;
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul {
+    display: flex;
+    li {
+      list-style-type: none;
+      &:hover {
+        cursor: pointer;
+        background: red;
+      }
+      a {
+        color: white;
+        display: block;
+        padding: 1.7rem;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+// --- FOOTER ---
+
+footer {
+  background: $red-color;
+  display: flex;
+  justify-content: center;
+  div {
+    color: white;
+    padding: 1.7em;
+  }
+}
